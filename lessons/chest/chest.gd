@@ -6,7 +6,7 @@ extends Area2D
 
 func open():
 	animation_player.play("open_chest")
-	
+	input_pickable = false
 
 func _input_event(viewport: Viewport, event: InputEvent, shape_index: int) -> void:
 	var event_is_mouse_click: bool = (
