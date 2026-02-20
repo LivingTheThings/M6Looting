@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cit7gnkdckyux"]
+[gd_scene format=3 uid="uid://cit7gnkdckyux"]
 
 [ext_resource type="Texture2D" uid="uid://114x1a0rmx4l" path="res://assets/dungeon/smooth_dungeon_tileset.png" id="1_sym7n"]
 [ext_resource type="Texture2D" uid="uid://cae527caaj50v" path="res://assets/dungeon/shadow_map.png" id="2_jthdw"]
@@ -260,13 +260,13 @@ sources/1 = SubResource("TileSetAtlasSource_6s4s5")
 sources/2 = SubResource("TileSetAtlasSource_4ftk2")
 sources/3 = SubResource("TileSetAtlasSource_m6vh0")
 
-[node name="MiniDungeon" type="Node2D"]
+[node name="MiniDungeon" type="Node2D" unique_id=779319895]
 metadata/_edit_horizontal_guides_ = []
 
-[node name="Background" type="Node2D" parent="."]
+[node name="Background" type="Node2D" parent="." unique_id=2056533443]
 y_sort_enabled = true
 
-[node name="TileMap" type="TileMap" parent="Background"]
+[node name="TileMap" type="TileMap" parent="Background" unique_id=1844000922]
 tile_set = SubResource("TileSet_70ny8")
 rendering_quadrant_size = 64
 format = 2
@@ -282,17 +282,17 @@ layer_3/tile_data = PackedInt32Array(262147, 1, 3, 327683, 1, 4, 262148, 131073,
 layer_4/name = "walls_top"
 layer_4/tile_data = PackedInt32Array(65547, 262145, 4, 131083, 262145, 5, 65542, 262145, 4, 131078, 262145, 5, 65538, 196609, 4, 196623, 196609, 4, 196622, 262145, 4, 262158, 262145, 5, 196621, 196609, 4, 3, 262147, 0, 2, 3, 2, 65551, 131075, 1, 131087, 131075, 2, 131086, 65539, 2, 65550, 262147, 2, 65549, 3, 1, 131085, 3, 2, 15, 131075, 1, 14, 262147, 1, -131061, 65539, 0, -65524, 131075, 1, -131060, 131075, 0, 13, 3, 0, -65521, 131075, 0, -65522, 3, 0, -65533, 65539, 0, -65534, 3, 0, 131076, 131075, 2, 65540, 131075, 1, 131075, 3, 2, 65539, 3, 1, 4, 131075, 1, -65532, 131075, 0, 12, 131075, 2, 11, 3, 2, -65525, 262147, 0, -131062, 3, 0, -65526, 3, 2)
 
-[node name="Pillar" type="Sprite2D" parent="Background"]
+[node name="Pillar" type="Sprite2D" parent="Background" unique_id=489011118]
 position = Vector2(192, 480)
 texture = ExtResource("4_gq228")
 offset = Vector2(0, -64)
 
-[node name="Pillar2" type="Sprite2D" parent="Background"]
+[node name="Pillar2" type="Sprite2D" parent="Background" unique_id=1929465266]
 position = Vector2(1088, 192)
 texture = ExtResource("4_gq228")
 offset = Vector2(0, -64)
 
-[node name="Web" type="Sprite2D" parent="Background"]
+[node name="Web" type="Sprite2D" parent="Background" unique_id=883839297]
 modulate = Color(1, 1, 1, 0.588235)
 texture_repeat = 1
 position = Vector2(803, 92)
@@ -300,20 +300,20 @@ scale = Vector2(0.852123, 0.852123)
 texture = ExtResource("5_ywba7")
 flip_h = true
 
-[node name="Torch" parent="Background" instance=ExtResource("6_fokey")]
+[node name="Torch" parent="Background" unique_id=1022794435 instance=ExtResource("6_fokey")]
 position = Vector2(672, 128)
 
-[node name="Torch2" parent="Background" instance=ExtResource("6_fokey")]
+[node name="Torch2" parent="Background" unique_id=1761391130 instance=ExtResource("6_fokey")]
 position = Vector2(480, 128)
 
-[node name="Camera2D" type="Camera2D" parent="Background"]
+[node name="Camera2D" type="Camera2D" parent="Background" unique_id=2028390808]
 position = Vector2(576, 235)
 rotation_smoothing_enabled = true
 
-[node name="CanvasLayer" type="CanvasLayer" parent="Background"]
+[node name="CanvasLayer" type="CanvasLayer" parent="Background" unique_id=1927891002]
 layer = -10
 
-[node name="ColorRect" type="ColorRect" parent="Background/CanvasLayer"]
+[node name="ColorRect" type="ColorRect" parent="Background/CanvasLayer" unique_id=133073685]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -323,11 +323,11 @@ mouse_filter = 2
 color = Color(0.977546, 0.842183, 0.960847, 1)
 metadata/_edit_lock_ = true
 
-[node name="Chest" parent="." instance=ExtResource("7_jj8kc")]
+[node name="Chest" parent="." unique_id=2048574425 instance=ExtResource("7_jj8kc")]
 position = Vector2(408, 260)
 
-[node name="Chest2" parent="." instance=ExtResource("7_jj8kc")]
+[node name="Chest2" parent="." unique_id=459937742 instance=ExtResource("7_jj8kc")]
 position = Vector2(579, 421)
 
-[node name="Chest3" parent="." instance=ExtResource("7_jj8kc")]
+[node name="Chest3" parent="." unique_id=804103614 instance=ExtResource("7_jj8kc")]
 position = Vector2(719, 263)

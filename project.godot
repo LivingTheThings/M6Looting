@@ -8,17 +8,21 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="M06. Looting (Workbook)"
 run/main_scene="res://lessons/mini_dungeon.tscn"
-config/features=PackedStringArray("4.5", "Forward Plus")
+config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon_looting.png"
 
 [autoload]
 
-UITestPanel="*res://addons/gdpractice/tester/ui_test_panel.tscn"
-Metadata="*res://addons/gdpractice/practice_solutions/metadata.gd"
+UITestPanel="*uid://bnnxfl3thl8qk"
+Metadata="*uid://cf4yrtp8utl1w"
 
 [display]
 
